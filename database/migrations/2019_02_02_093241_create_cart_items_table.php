@@ -16,7 +16,6 @@ class CreateCartItemsTable extends Migration
         Schema::create('cart_items', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('photo_id')->unsigned();
-            $table->integer('qty')->unsigned();
             $table->integer('cart_id')->unsigned();
             $table->timestamps();
         });
